@@ -55,7 +55,7 @@ const FormSelect: React.FC<IFormSelectProps> = ({
   //   onChange && onChange(name, value?.value);
   // };
 
-  const handleChange = ((e as any) ) => {
+  const handleChange = (e: { value: any }) => {
     const inputValue = e.value;
 
     const nestedObjectName = findNestedObject(name, state);
